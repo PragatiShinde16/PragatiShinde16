@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI Design</title>
+    <style>
+        form{
+            border: 2px solid red;
+            display: inline-block;
+            margin: 40px 450px;
+            padding: 23px 40px;
+            background-color: rgb(189, 219, 234);
+        }
+        h2{
+            margin: 6px 450px;
+            color: rgb(87, 56, 244);
+        }
+    </style>
+</head>
+<body>
+    <h2>This Is GUI Tutorial</h2>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="MyName" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="roll">Roll No:</label>
+            <input type="text" name="MyRoll" id="roll">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email Id:</label>
+            <input type="email" name="MyEmail" id="email">
+        </div>
+        <br>
+        <div>
+            Birth Date:<input type="date" name="MyBirthDate">
+        </div>
+        <br>
+        <div>
+            Bonus :<input type="number" name="MyBonus" id="bonus">
+        </div>
+        <br>
+        <div>
+            Gender :Male<input type="radio" name="MyGender"> Female <input type="radio" name="MyGender"> Other <input type="radio" name="MyGender">
+        </div>
+        <br>
+        <div>
+            Are you eligible : <input type="checkbox" name="MyEligibility">
+        </div>
+        <br>
+        <div>
+            <label for="branch">Branch :</label>
+            <select name="MyBranch" id="branch">
+                <option value="CSE">CSE</option>
+                <option value="ENTC">ENTC</option>
+                <option value="Mech">Mech</option>
+                <option value="Civil">Civil</option>
+                <option value="Electrical">Electrical</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Write about yourself : <textarea name="MyText" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+    </form>
+</body>
+</html>
